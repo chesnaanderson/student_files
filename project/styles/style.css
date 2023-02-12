@@ -1,0 +1,19 @@
+/* HTML Selectors */
+body {
+    font-family: 'Kalam', cursive;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+    
+}
+
+header {
+    background-color: rgb(185, 165, 165);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+

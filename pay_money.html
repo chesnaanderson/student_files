@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyone pays this much</title>
+</head>
+<body>
+    <form action="/url" method="POST">
+
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gas_money</title>
+</head>
+<body>
+    <form action="/url" method="POST">
+        <label>
+            Please enter the number of miles your car gets per gallon of gas
+            <input type="text" name="mPGG"  required>
+        </label>
+        <label>
+            Please enter the number of miles traveled
+            <input type="text" name="miles" required>
+        </label>
+        <label>
+            Please enter the price of gas per gallon
+            <input type="text" name="price" required>
+        </label>
+        <label>
+            Please enter the number of people
+            <input type="text" name="people" required>
+        </label>
+        
+        <button type="submit">Submit</button>  
+    </form>
+    <span id="gas_money"></span></h1>
+    <script>
+        var gas_money = (((miles/mPGG)*price)/people);
+
+        document.getElementById("gas_money").innerHTML = "Gas money: " + gas_money;
+
+       
+    </script>
+</body>
+</html>
+
+<!-- </script>
+
+</head>
+
+<body>
+        <span id="gas_money"></span></h1>
+        <script>
+        
+            var mPGG = prompt("Please enter how many miles per gallon of gas your car gets: ","<GAS>");
+            var miles = prompt("Please enter the number of miles traveled: ","<MILES>");
+            var price = prompt("Please enter the price of gas per gallon: ","<PRICE>");
+            var people = prompt("Please enter the number of people: ","<PEOPLE>");
+            var gas_money = (((miles/mPGG)*price)/people);
+            document.getElementById("gas_money").innerHTML = "Gas money: " + gas_money;
+
+        </script>
+ -->
+
+<!-- </body>
+</html>
+<form class="gas_money">
+
+    <label>Please enter how many miles per gallon of gas your car gets</label>
+    <input class="input" id="mPGG" type="number">
+    
+    <label>Please enter the number of miles traveled</label>
+    <input class="input" id="miles" type="number">
+    
+    <label>Please enter the price of gas per gallon</label>
+    <input class="input" id="price" type="number">
+    
+    <label>Please enter the number of people</label>
+    <input class="input" id="people" type="number">
+
+    </form>
+    <span id="gas_money"></span></h1>
+    <script>
+       if (input!= null){
+       var gas_money = (((miles/mPGG)*price)/people);
+         document.getElementById("gas_money").innerHTML = "Gas money: " + gas_money;
+       }
+    </script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="question">
+<h1> How much money everyone should pay</h1>
+</div>
+<div class=number-input>
+<p>Enter the miles per gallon of gas your car gets. </p>
+<input type="number" id='mPGG'>
+</div>
+<div class=number-input>
+<p>Enter the number of miles traveled. </p>
+<input type="number" id='miles'>
+</div>
+<div class=number-input>
+<p>Enter the price of gas per gallon. </p>
+<input type="number" id='price'>
+</div>
+<div class=number-input>
+<p>Enter the number of people. </p>
+<input type="number" id='people'>
+</div>
+<div class='button'>
+<button onclick="myCalculation()">Calculate</button>
+</div>
+<div class='answer'>
+<p id='display'></p>
+</body>
